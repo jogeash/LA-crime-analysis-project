@@ -1,0 +1,7 @@
+__pycache__/
+*.pkl
+*.h5
+*.csv
+*.zip
+*.mp4
+data/
