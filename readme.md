@@ -26,11 +26,12 @@ This project explores crime trends in Los Angeles from 2020 to 2024 using data a
 
 ```
 📁 LA_Crime_Analysis
- ├── 📊 data/                # Raw and cleaned datasets
- ├── 📈 notebooks/           # Jupyter notebooks with analysis
- ├── 🔍 figures/             # Saved visualizations
- ├── 📄 report/              # Final project report (PDF)
- └── 📜 README.md
+ 📁 Los_Angeles_Crime_Analysis
+ ├── 📊 Data Preprocessing
+ ├── 📈 Exploratory Data Analysis (EDA)
+ ├── 🔍 Crime Trends & Visualization
+ ├── 🤖 Predictive Modeling (Facebook Prophet Forecasting)
+ ├── 📄 Report & Findings
 ```
 
 ## 📊 Data Processing & Methodology
