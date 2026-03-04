@@ -25,7 +25,6 @@ This project explores crime trends in Los Angeles from 2020 to 2024 using data a
 ## 📂 Project Structure
 
 ```
-📁 LA_Crime_Analysis
  📁 Los_Angeles_Crime_Analysis
  ├── 📊 Data Preprocessing
  ├── 📈 Exploratory Data Analysis (EDA)
