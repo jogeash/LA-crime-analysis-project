@@ -3,9 +3,7 @@
 ## 📆 Project Details
 📅 **Date:** September 2025  
 👩‍💻 **Authors:** Jogeashwini Srinivasan Ramesh, Anika Mamidwar, Sanya Kaluarachchi
-
 🏛️ **Institution:** Northeastern University  
-
 
 ## 🖥️ Tech Stack
 * **Programming Language:** Python 🐍
