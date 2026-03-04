@@ -1,8 +1,8 @@
 # 📊 Los Angeles Crime Analysis & Forecasting
 
 ## 📆 Project Details
-📅 **Date:** September 2025  
-👩‍💻 **Authors:** Jogeashwini Srinivasan Ramesh, Anika Mamidwar, Sanya Kaluarachchi
+📅 **Date:** 2024  
+👩‍💻 **Authors:** Anika Mamidwar, Sanya Kaluarachchi, Jogeashwini  
 🏛️ **Institution:** Northeastern University  
 
 ## 🖥️ Tech Stack
@@ -49,43 +49,73 @@ This project explores crime trends in Los Angeles from 2020 to 2024 using data a
 * **Column removal:** Dropped Weapon Description, Weapon Used Code, Mocodes, and Cross Street.
 * **Filtered partial data:** Removed 2025 entries (only recorded through March) to avoid skewing yearly comparisons.
 
+---
+
 ## 📈 Exploratory Data Analysis (EDA)
 
 ### 📊 Overall Crime Trends
-* Crime peaked in **2022** before declining in 2023 & 2024.
-* The 2024 drop is largely a reporting artifact due to LAPD's new record management system adopted in March 2024.
 
-### 📅 Seasonal & Temporal Patterns
-* Crime is highest during **summer months (June–August)** and lowest in **February**.
-* Most crimes occur during **afternoon and evening hours** (12 PM–11 PM).
-* A clear weekly cycle: higher crime on weekends, building through the weekdays.
+Crime steadily increased from ~200,000 incidents in 2020 to a peak of ~236,000 in 2022, before declining in 2023. The sharp drop in 2024 is largely a reporting artifact due to LAPD adopting a new FBI-compliant record management system in March 2024.
 
-### 🔎 Crime Type Analysis
-* **Top categories:**
-   1. Burglary/Theft From Vehicle (BTFV)
-   2. Other Theft (shoplifting, monetary theft)
-   3. Motor Vehicle Theft
-   4. Domestic Violence
-   5. Simple Assault
-* Homicides represent a very small fraction of total incidents.
+![Total Number of Crimes per Year](figures/total_crimes_per_year.png)
 
-### 📍 Regional Crime Analysis
-* **Highest crime areas:** 77th Street, Central
-* Crime stays fairly consistent across most of LA County's 21 LAPD geographic divisions, with those two as notable exceptions.
+---
+
+### 📅 Monthly Crime Counts by Year
+
+Breaking down crime counts by month for each year reveals that 2022 and 2023 consistently had the highest monthly counts, while 2024 shows a dramatic decline starting mid-year as the old reporting system was phased out.
+
+![Monthly Crime Counts by Year](figures/monthly_crime_counts_by_year.png)
+
+---
+
+### 🌡️ Seasonal Crime Patterns
+
+Average monthly crime data shows a dip from January through April, followed by a summer surge peaking in June–July. Crime dips again in September before a sharp spike in December.
+
+![Average Monthly Crimes](figures/avg_monthly_crimes.png)
+
+---
+
+### 🕐 Crime Frequency by Day of Week and Hour
+
+The heatmap reveals that crime peaks around **12 PM (noon)** across all days, with the highest concentration on weekdays (Monday–Wednesday). Late-night and early-morning hours consistently show the lowest crime frequency.
+
+![Crime Frequency by Day of Week and Hour](figures/crime_heatmap_day_hour.png)
+
+---
 
 ### 📊 Violent vs. Property Crime Patterns
-* Violent crimes (homicide, rape, robbery, aggravated assault, domestic violence, simple assault) **peak on Sundays**.
-* Property crimes (burglary, motor vehicle theft, BTFV, personal theft, other theft) **peak on Fridays**.
+
+**Violent crimes** (homicide, rape, robbery, aggravated assault, domestic violence, simple assault) trend upward through the week and **peak on Sundays**. In contrast, **property crimes** (burglary, motor vehicle theft, BTFV, personal theft, other theft) build through the weekdays and **peak on Fridays**.
+
+![Violent and Property Crimes by Day of Week](figures/violent_property_crimes_by_day.png)
+
+---
+
+### 📍 Regional Crime Analysis
+
+The heatmap of crime counts by LAPD area and year shows that **77th Street and Central** consistently have the highest crime counts across all years. Most other areas remain relatively consistent, with 2022 being the peak year across nearly all regions.
+
+![Crime Count by Area and Year](figures/crime_count_area_year_heatmap.png)
+
+---
 
 ### 👤 Victim Demographics
-* Males represent the largest proportion of crime victims across all years.
-* In 2024, the proportion of "Unknown" sex victims increased significantly — likely tied to the reporting system migration.
+
+Males represent the largest proportion of crime victims (~42%), followed by females (~37%), with the remainder classified as unknown (X). This distribution remains fairly consistent across the dataset.
+
+![Proportion of Crimes by Victim Sex](figures/crimes_by_victim_sex.png)
+
+---
 
 ## 🤖 Predictive Modeling (Prophet Forecasting)
-* Trained on **monthly crime data from 2020–2023** using Facebook Prophet.
-* Forecasted 2024–2025 crime trends show a **continued downward trajectory**.
-* The model captures seasonality but does **not account for political, legal, or socioeconomic reforms**.
-* Confidence intervals widen over time, reflecting increasing uncertainty.
+
+Using Facebook Prophet trained on **monthly crime data from 2020–2023**, forecasted 2024–2025 crime trends show a continued downward trajectory. The model captures seasonality but does **not account for political, legal, or socioeconomic reforms**. The observed 2024 data (blue) diverges sharply from the forecast (red), largely due to the reporting system change. Confidence intervals widen over time, reflecting increasing uncertainty.
+
+![Prophet Crime Forecast](figures/prophet_forecast.png)
+
+---
 
 ## 🚀 Future Improvements
 * Incorporate **socioeconomic and environmental factors** into forecasting models.
@@ -105,4 +135,3 @@ This project explores crime trends in Los Angeles from 2020 to 2024 using data a
 💡 If you find this useful, star ⭐ this repo!
 
 📩 For questions, feel free to reach out! 🚀
-
