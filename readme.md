@@ -129,7 +129,7 @@ Using Facebook Prophet trained on **monthly crime data from 2020–2023**, forec
 * Prophet model relies solely on historical trends without external regressors.
 
 ## 📜 Full Report
-📄 Read the full Los Angeles Crime Analysis Report [here]https://github.com/jogeash/LA-crime-analysis-project/blob/main/LA%20crime%20analysis%20Report.pdf(report/).
+📄 Read the full Los Angeles Crime Analysis Report [[here](report/)](https://github.com/jogeash/LA-crime-analysis-project/blob/main/LA%20crime%20analysis%20Report.pdf).
 
 ## ⭐ Contribute & Connect
 💡 If you find this useful, star ⭐ this repo!
