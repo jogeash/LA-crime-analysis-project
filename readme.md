@@ -4,7 +4,7 @@
 📅 **Date:** September 2025  
 👩‍💻 **Authors:** Jogeashwini Srinivasan Ramesh, Anika Mamidwar, Sanya Kaluarachchi 
 🏛️ **Institution:** Northeastern University  
-📚 **Course:** IE 6400
+
 
 ## 🖥️ Tech Stack
 * **Programming Language:** Python 🐍
